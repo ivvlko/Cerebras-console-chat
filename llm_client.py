@@ -25,7 +25,7 @@ def chat():
     client = InferenceClient(provider="cerebras", api_key=API_KEY)
     print("Welcome to Cerebras Chat Bot")
     
-    clean_enabled = input("Do you want to receive the thought process behind model? ").strip().lower() in ["yes", "y"]
+    clean_enabled = input("Do you want to hide the thought process behind model' decision? ").strip().lower() in ["yes", "y"]
 
     while True:
         user_input = input("You: ").strip()
